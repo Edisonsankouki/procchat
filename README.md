@@ -3,7 +3,7 @@ asm4 for usyd comp2017
 a record.
 
 ## How your solution communicates between the client-handler and client?
-The the client handler talks to the client by writing into their rd pipe and reading their message from the wr pipe. And you can do this with popen() to get their pipes by their dirtories.
+The the client handler talks to the client by writing into their rd pipe and reading their message from the wr pipe. And you can do this with popen() to get their pipes by their domains.
 
 ## How are you handling erroneous messages?
 This client handler will ignore message type out of the range given. And if the size is not reached to required it will still sends the message.(what is the meaning of this shit?)
